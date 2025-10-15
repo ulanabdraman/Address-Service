@@ -5,6 +5,7 @@ import "math"
 const EarthRadiusMeters = 6371000 // в метрах
 
 func DistanceMeters(lat1, lon1, lat2, lon2 float64) float64 {
+
 	dLat := toRad(lat2 - lat1)
 	dLon := toRad(lon2 - lon1)
 
