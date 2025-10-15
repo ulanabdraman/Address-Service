@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  host: localhost
+
+kafka:
+  brokers:
+    - "192.168.1.220:9092"
+  raw_topic: "raw"
+  enriched_topic: "raw-address"
+  group_id: "raw-id"
+
+geocoder:
+  base_url: "http://labauto.kz:8012"
+  timeout_ms: 800
+  workers: 100
